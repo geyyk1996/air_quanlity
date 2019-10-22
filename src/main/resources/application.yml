@@ -3,7 +3,7 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/air_quality?useSSL=false&characterEncoding=UTF-8
+    url: jdbc:mysql://192.168.1.4:3306/air_quality?useSSL=false&characterEncoding=UTF-8
     type: com.alibaba.druid.pool.DruidDataSource
     #   数据源其他配置
     initialSize: 5

@@ -7,6 +7,6 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 public interface AirMapper {
 
-    @Select("select * from air_quanlity where id = (select max(id) from air_quanlity")
+    @Select("select * from air_data where id = (select max(id) from air_data)")
     Air getNewAir();
 }
