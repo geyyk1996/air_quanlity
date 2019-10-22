@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>空气质量</title>
+</head>
+<body>
+    <table>
+        <th>ID</th>
+        <th>接收时间</th>
+        <th>一氧化碳</th>
+        <th>氨气</th>
+        <th>二氧化碳</th>
+        <th>TVOC</th>
+        <th>TMEP</th>
+        <th>HUMI</th>
+        <tr>
+            <td th:text="${air.id}"></td>
+            <td th:text="${air.time}"></td>
+            <td th:text="${air.co}"></td>
+            <td th:text="${air.nh3}"></td>
+            <td th:text="${air.co2}"></td>
+            <td th:text="${air.tvoc}"></td>
+            <td th:text="${air.tmep}"></td>
+            <td th:text="${air.humi}"></td>
+        </tr>
+    </table>
+</body>
+</html>
